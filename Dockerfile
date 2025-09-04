@@ -24,8 +24,8 @@ WORKDIR /var/www
 COPY . /var/www
 
 # Set permissions for the upload directory
-RUN chown -R www-data:www-data /var/www/assets/uploads && \
-    chmod -R 755 /var/www/assets/uploads
+RUN chown -R www-data:www-data /var/www/writable/uploads && \
+    chmod -R 755 /var/www/writable/uploads
 
 
 # Copy existing application directory permissions
