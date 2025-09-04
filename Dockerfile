@@ -27,14 +27,21 @@ COPY . /var/www
 # Set permissions for the entire application
 RUN chown -R www-data:www-data /var/www && \
     chmod -R 755 /var/www && \
+    chmod -R 777 /var/www/writable && \
+    mkdir -p /var/www/writable/cache && \
+    mkdir -p /var/www/writable/logs && \
+    mkdir -p /var/www/writable/session && \
+    mkdir -p /var/www/writable/uploads && \
+    chown -R www-data:www-data /var/www/writable && \
     chmod -R 777 /var/www/writable
 
 # Copy existing application directory permissions
 COPY --chown=www-data:www-data . /var/www
 
-# Change current user to www
-USER www-data
-
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
-CMD ["php-fpm"]
+
+# Create startup script to fix permissions
+RUN echo '#!/bin/bash\nchown -R www-data:www-data /var/www/writable\nchmod -R 777 /var/www/writable\nphp-fpm' > /start.sh && chmod +x /start.sh
+
+CMD ["/start.sh"]
