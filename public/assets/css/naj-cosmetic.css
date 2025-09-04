@@ -1,0 +1,586 @@
+/* ========================================
+   NAJ COSMETIC - Custom Styles
+   ======================================== */
+
+:root {
+    /* Palette de couleurs NAJ COSMETIC */
+    --color-cream: #F7F5F3;
+    --color-beige: #E8E2D8;
+    --color-sage: #82a160;
+    --color-gold: #D4AF37;
+    --color-brown: #8B7355;
+    --color-dark-brown: #5D4E37;
+    --color-white: #FFFFFF;
+    --color-text: #3D3D3D;
+    --color-text-light: #6B6B6B;
+    
+    /* Typographie */
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Source Sans Pro', sans-serif;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    color: var(--color-dark-brown);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: var(--color-text-light);
+}
+
+/* ========================================
+   Custom Color Classes
+   ======================================== */
+
+.bg-cream {
+    background-color: var(--color-cream) !important;
+}
+
+.bg-beige {
+    background-color: var(--color-beige) !important;
+}
+
+.bg-sage {
+    background-color: var(--color-sage) !important;
+}
+
+.bg-gold {
+    background-color: var(--color-gold) !important;
+}
+
+.bg-brown {
+    background-color: var(--color-brown) !important;
+}
+
+.bg-dark-brown {
+    background-color: var(--color-dark-brown) !important;
+}
+
+.text-sage {
+    color: var(--color-sage) !important;
+}
+
+.text-gold {
+    color: var(--color-gold) !important;
+}
+
+.text-brown {
+    color: var(--color-brown) !important;
+}
+
+.text-dark-brown {
+    color: var(--color-dark-brown) !important;
+}
+
+.text-beige {
+    color: var(--color-beige) !important;
+}
+
+.border-brown {
+    border-color: var(--color-brown) !important;
+}
+
+/* ========================================
+   Logo & Brand
+   ======================================== */
+
+.naj-logo {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--color-sage);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.naj-logo:hover {
+    color: var(--color-brown);
+    text-decoration: none;
+}
+
+/* ========================================
+   Custom Buttons
+   ======================================== */
+
+.btn-naj-primary {
+    background-color: var(--color-sage);
+    border-color: var(--color-sage);
+    color: var(--color-white);
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-naj-primary:hover {
+    background-color: var(--color-brown);
+    border-color: var(--color-brown);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(156, 175, 136, 0.3);
+}
+
+.btn-naj-secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-sage);
+    color: var(--color-sage);
+    padding: 10px 28px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-naj-secondary:hover {
+    background-color: var(--color-sage);
+    border-color: var(--color-sage);
+    color: var(--color-white);
+}
+
+.btn-naj-outline {
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-naj-outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-sage);
+}
+
+/* ========================================
+   Custom Cards
+   ======================================== */
+
+.card-naj {
+    background-color: var(--color-white);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card-naj:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card-naj .card-body {
+    padding: 2rem;
+}
+
+/* ========================================
+   Product Cards
+   ======================================== */
+
+.product-card {
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.product-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-sage);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-white);
+    margin: 0 auto 1.5rem;
+}
+
+.product-price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-sage);
+    margin: 1rem 0;
+}
+
+/* ========================================
+   Feature Icons
+   ======================================== */
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-sage);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin: 0 auto 1rem;
+}
+
+/* ========================================
+   Ingredient Tags
+   ======================================== */
+
+.ingredient-tag {
+    background-color: var(--color-sage);
+    color: var(--color-white);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0.25rem;
+}
+
+/* ========================================
+   Timeline
+   ======================================== */
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--color-sage), var(--color-brown));
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-sage);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.timeline-content {
+    background-color: var(--color-cream);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 0 0 0 50%;
+    width: 45%;
+}
+
+.timeline-content:nth-child(even) {
+    margin: 0 50% 0 0;
+}
+
+/* ========================================
+   Hero Sections
+   ======================================== */
+
+.hero-section {
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--color-dark-brown);
+    margin-bottom: 2rem;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.8;
+}
+
+/* ========================================
+   Philosophy Section
+   ======================================== */
+
+.philosophy-section {
+    padding: 5rem 0;
+    background-color: var(--color-white);
+}
+
+.philosophy-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.philosophy-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-sage);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-white);
+    margin: 0 auto 1.5rem;
+}
+
+/* ========================================
+   Product Detail
+   ======================================== */
+
+.product-image {
+    height: 500px;
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: var(--color-sage);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.ingredient-card {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.ingredient-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.ingredient-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-sage);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin: 0 auto 1rem;
+}
+
+/* ========================================
+   Usage Instructions
+   ======================================== */
+
+.usage-card {
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.time-card {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--color-cream);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.time-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.time-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .founder-image {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-dot {
+        left: 20px;
+    }
+    
+    .timeline-content {
+        margin: 0 0 0 3rem !important;
+        width: calc(100% - 3rem);
+    }
+    
+    .timeline-content:nth-child(even) {
+        margin: 0 0 0 3rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .founder-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .btn-naj-primary,
+    .btn-naj-secondary,
+    .btn-naj-outline {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ========================================
+   Founder Image
+   ======================================== */
+
+.founder-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(156, 175, 136, 0.2);
+    transition: all 0.3s ease;
+}
+
+.founder-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(156, 175, 136, 0.3);
+}
+
+.founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ========================================
+   Utilities
+   ======================================== */
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--color-sage), var(--color-brown));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.shadow-naj {
+    box-shadow: 0 10px 30px rgba(156, 175, 136, 0.2);
+}
+
+.border-naj {
+    border: 2px solid var(--color-sage);
+}
+
+.rounded-naj {
+    border-radius: 20px;
+}
