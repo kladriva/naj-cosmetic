@@ -11,7 +11,7 @@
                     Notre Histoire
                 </h1>
                 <p class="hero-subtitle">
-                    Découvrez le parcours inspirant d'Anyssa Joelle NTONGESSA, fondatrice de NAJ COSMETIC
+                    Découvrez le parcours inspirant d'Anyssa Joëlle NTONGESSA, fondatrice de NAJ COSMETIC
                 </p>
             </div>
         </div>
@@ -23,26 +23,26 @@
     <div class="container">
         <div class="row g-5 align-items-center mb-5">
             <!-- Founder Image -->
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
                 <div class="founder-image mx-auto">
-                    <img src="/assets/images/anyssa-joelle.jpg" alt="Anyssa Joelle NTONGESSA, fondatrice de NAJ COSMETIC">
+                    <img src="/assets/images/anyssa-joelle.jpg" alt="Anyssa Joelle NTONGESSA, fondatrice de NAJ COSMETIC" class="img-fluid">
                 </div>
             </div>
             
             <!-- Founder Story -->
-            <div class="col-lg-6">
-                <h2 class="text-dark-brown mb-3">
+            <div class="col-lg-6 col-md-12">
+                <h2 class="text-dark-brown mb-3 text-center text-lg-start">
                     <?= $founder['name'] ?>
                 </h2>
-                <h3 class="text-sage mb-4">
+                <h3 class="text-brown mb-4 text-center text-lg-start">
                     <?= $founder['title'] ?>
                 </h3>
                 
-                <p class="fs-5 text-muted mb-4">
+                <p class="fs-5 text-muted mb-4 text-center text-lg-start">
                     <?= $founder['story'] ?>
                 </p>
                 
-                <p class="fs-5 text-muted">
+                <p class="fs-5 text-muted text-center text-lg-start">
                     <?= $founder['philosophy'] ?>
                 </p>
             </div>
@@ -63,10 +63,10 @@
         
         <div class="row g-4">
             <?php foreach ($founder['values'] as $value => $description): ?>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card card-naj h-100">
-                    <div class="card-body text-center p-4">
-                        <div class="philosophy-icon mb-4">
+                    <div class="card-body text-center p-3 p-md-4">
+                        <div class="philosophy-icon mb-3 mb-md-4">
                             <?php
                             $icons = [
                                 'Naturel' => 'fas fa-leaf',
@@ -80,11 +80,11 @@
                             <i class="<?= $iconClass ?>"></i>
                         </div>
                         
-                        <h3 class="text-dark-brown mb-3">
+                        <h3 class="text-dark-brown mb-3 fs-4 fs-md-3">
                             <?= $value ?>
                         </h3>
                         
-                        <p class="text-muted">
+                        <p class="text-muted small">
                             <?= $description ?>
                         </p>
                     </div>
@@ -143,7 +143,7 @@
                     <h3 class="text-dark-brown mb-3">
                         <i class="fas fa-rocket me-2"></i>Création de NAJ COSMETIC
                     </h3>
-                    <p class="text-muted">En 2024, Anyssa Joelle fonde NAJ COSMETIC pour partager sa passion et offrir des cosmétiques naturels de qualité.</p>
+                    <p class="text-muted">En 2024, Anyssa Joëlle fonde NAJ COSMETIC pour partager sa passion et offrir des cosmétiques naturels de qualité.</p>
                 </div>
             </div>
         </div>
@@ -161,11 +161,11 @@
                 <p class="fs-5 text-white mb-4" style="opacity: 0.95; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
                     Découvrez nos produits naturels et faites partie de notre communauté de femmes qui choisissent la beauté authentique.
                 </p>
-                <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <a href="/produits" class="btn btn-naj-primary">
+                <div class="d-flex gap-2 gap-md-3 justify-content-center flex-wrap">
+                    <a href="/produits" class="btn btn-naj-primary btn-sm btn-md">
                         <i class="fas fa-shopping-bag me-2"></i>Découvrir nos produits
                     </a>
-                    <a href="/" class="btn btn-naj-outline">
+                    <a href="/" class="btn btn-naj-outline btn-sm btn-md">
                         <i class="fas fa-home me-2"></i>Retour à l'accueil
                     </a>
                 </div>

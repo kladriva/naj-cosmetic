@@ -93,7 +93,7 @@
                                 <i class="fas fa-user-md"></i>
                             </div>
                             <h5 class="text-dark-brown mb-2">Formulé par des experts</h5>
-                            <p class="text-muted small">Créé par Anyssa Joelle, passionnée de cosmétique</p>
+                            <p class="text-muted small">Créé par Anyssa Joëlle, passionnée de cosmétique</p>
                         </div>
                     </div>
                     

@@ -137,7 +137,7 @@
                     <i class="fas fa-users me-2"></i>Rejoignez l'aventure NAJ COSMETIC
                 </h2>
                 <p class="fs-5 text-white mb-4" style="opacity: 0.95; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-                    Découvrez l'histoire d'Anyssa Joelle, fondatrice de NAJ COSMETIC, et plongez dans l'univers de la cosmétique naturelle authentique.
+                    Découvrez l'histoire d'Anyssa Joëlle, fondatrice de NAJ COSMETIC, et plongez dans l'univers de la cosmétique naturelle authentique.
                 </p>
                 <div class="d-flex gap-3 justify-content-center flex-wrap">
                     <a href="/notre-histoire" class="btn btn-naj-primary">
