@@ -17,7 +17,7 @@
                     <a href="/produits" class="btn btn-naj-primary">
                         <i class="fas fa-shopping-bag me-2"></i>Découvrir nos produits
                     </a>
-                    <a href="/notre-histoire" class="btn btn-naj-secondary">
+                    <a href="/notre-histoire" class="btn btn-naj-outline" style="background-color: rgba(255, 255, 255, 0.9); border: 2px solid var(--color-gold); color: var(--color-gold-dark); font-weight: 500;">
                         <i class="fas fa-heart me-2"></i>Notre histoire
                     </a>
                 </div>
@@ -41,7 +41,7 @@
                     <div class="philosophy-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <h4 class="text-dark-brown mb-3">Naturel</h4>
+                    <h4 class="text-dark-brown mb-3">Nature</h4>
                     <p class="text-muted">Des ingrédients 100% naturels, sans compromis sur la qualité</p>
                 </div>
             </div>
@@ -129,19 +129,24 @@
 </section>
 
 <!-- Call to Action Section -->
-<section class="py-5 bg-white">
+<section class="py-5" style="background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-brown) 100%);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h2 class="text-dark-brown mb-4">
-                    Rejoignez l'aventure NAJ COSMETIC
+                <h2 class="text-white mb-4 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                    <i class="fas fa-users me-2"></i>Rejoignez l'aventure NAJ COSMETIC
                 </h2>
-                <p class="fs-5 text-muted mb-4">
+                <p class="fs-5 text-white mb-4" style="opacity: 0.95; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
                     Découvrez l'histoire d'Anyssa Joelle, fondatrice de NAJ COSMETIC, et plongez dans l'univers de la cosmétique naturelle authentique.
                 </p>
-                <a href="/notre-histoire" class="btn btn-naj-primary">
-                    <i class="fas fa-heart me-2"></i>Découvrir notre histoire
-                </a>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="/notre-histoire" class="btn btn-naj-primary">
+                        <i class="fas fa-heart me-2"></i>Découvrir notre histoire
+                    </a>
+                    <a href="/produits" class="btn btn-naj-outline">
+                        <i class="fas fa-shopping-bag me-2"></i>Nos produits
+                    </a>
+                </div>
             </div>
         </div>
     </div>

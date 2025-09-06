@@ -3,13 +3,17 @@
    ======================================== */
 
 :root {
-    /* Palette de couleurs NAJ COSMETIC */
-    --color-cream: #F7F5F3;
-    --color-beige: #E8E2D8;
+    /* Palette de couleurs NAJ COSMETIC - Inspirée de la carte Revolut dorée */
+    --color-cream: #FFF8DC;
+    --color-beige: #F5E6D3;
     --color-sage: #82a160;
-    --color-gold: #D4AF37;
+    --color-gold: #F4D03F;
+    --color-gold-bright: #FFD700;
+    --color-gold-dark: #B8860B;
+    --color-gold-metallic: #DAA520;
     --color-brown: #8B7355;
     --color-dark-brown: #5D4E37;
+    --color-silver: #C0C0C0;
     --color-white: #FFFFFF;
     --color-text: #3D3D3D;
     --color-text-light: #6B6B6B;
@@ -89,6 +93,22 @@ p {
     background-color: var(--color-dark-brown) !important;
 }
 
+.bg-gold-bright {
+    background-color: var(--color-gold-bright) !important;
+}
+
+.bg-gold-dark {
+    background-color: var(--color-gold-dark) !important;
+}
+
+.bg-gold-metallic {
+    background-color: var(--color-gold-metallic) !important;
+}
+
+.bg-silver {
+    background-color: var(--color-silver) !important;
+}
+
 .text-sage {
     color: var(--color-sage) !important;
 }
@@ -109,8 +129,32 @@ p {
     color: var(--color-beige) !important;
 }
 
+.text-gold-bright {
+    color: var(--color-gold-bright) !important;
+}
+
+.text-gold-dark {
+    color: var(--color-gold-dark) !important;
+}
+
+.text-gold-metallic {
+    color: var(--color-gold-metallic) !important;
+}
+
+.text-silver {
+    color: var(--color-silver) !important;
+}
+
 .border-brown {
     border-color: var(--color-brown) !important;
+}
+
+.border-gold {
+    border-color: var(--color-gold) !important;
+}
+
+.border-gold-bright {
+    border-color: var(--color-gold-bright) !important;
 }
 
 /* ========================================
@@ -121,13 +165,19 @@ p {
     font-family: var(--font-primary);
     font-size: 1.75rem;
     font-weight: 500;
-    color: var(--color-sage);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-decoration: none;
     letter-spacing: 1px;
 }
 
 .naj-logo:hover {
-    color: var(--color-brown);
+    background: linear-gradient(135deg, var(--color-gold-bright) 0%, var(--color-gold-metallic) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-decoration: none;
 }
 
@@ -136,27 +186,28 @@ p {
    ======================================== */
 
 .btn-naj-primary {
-    background-color: var(--color-sage);
-    border-color: var(--color-sage);
-    color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
+    border-color: var(--color-gold);
+    color: var(--color-dark-brown);
     padding: 12px 30px;
     border-radius: 25px;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3);
 }
 
 .btn-naj-primary:hover {
-    background-color: var(--color-brown);
-    border-color: var(--color-brown);
-    color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-gold-bright) 0%, var(--color-gold-metallic) 100%);
+    border-color: var(--color-gold-bright);
+    color: var(--color-dark-brown);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(156, 175, 136, 0.3);
+    box-shadow: 0 8px 25px rgba(244, 208, 63, 0.4);
 }
 
 .btn-naj-secondary {
     background-color: transparent;
-    border: 2px solid var(--color-sage);
-    color: var(--color-sage);
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
     padding: 10px 28px;
     border-radius: 25px;
     font-weight: 500;
@@ -164,9 +215,11 @@ p {
 }
 
 .btn-naj-secondary:hover {
-    background-color: var(--color-sage);
-    border-color: var(--color-sage);
-    color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
+    border-color: var(--color-gold);
+    color: var(--color-dark-brown);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(244, 208, 63, 0.3);
 }
 
 .btn-naj-outline {
@@ -180,8 +233,11 @@ p {
 }
 
 .btn-naj-outline:hover {
-    background-color: var(--color-white);
-    color: var(--color-sage);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
+    border-color: var(--color-gold);
+    color: var(--color-dark-brown);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(244, 208, 63, 0.3);
 }
 
 /* ========================================
@@ -210,7 +266,7 @@ p {
    ======================================== */
 
 .product-card {
-    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 50%, var(--color-gold) 100%);
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
@@ -226,20 +282,21 @@ p {
 .product-icon {
     width: 80px;
     height: 80px;
-    background-color: var(--color-sage);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    color: var(--color-white);
+    color: var(--color-dark-brown);
     margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3);
 }
 
 .product-price {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--color-sage);
+    color: var(--color-gold-dark);
     margin: 1rem 0;
 }
 
@@ -250,14 +307,15 @@ p {
 .feature-icon {
     width: 60px;
     height: 60px;
-    background-color: var(--color-sage);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: var(--color-white);
+    color: var(--color-dark-brown);
     margin: 0 auto 1rem;
+    box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3);
 }
 
 /* ========================================
@@ -265,13 +323,15 @@ p {
    ======================================== */
 
 .ingredient-tag {
-    background-color: var(--color-sage);
-    color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
+    color: var(--color-dark-brown);
     padding: 0.5rem 1rem;
     border-radius: 15px;
     font-size: 0.9rem;
     display: inline-block;
     margin: 0.25rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(244, 208, 63, 0.3);
 }
 
 /* ========================================
@@ -291,7 +351,7 @@ p {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: linear-gradient(to bottom, var(--color-sage), var(--color-brown));
+    background: linear-gradient(to bottom, var(--color-gold), var(--color-gold-dark));
     transform: translateX(-50%);
 }
 
@@ -303,12 +363,13 @@ p {
 .timeline-dot {
     width: 20px;
     height: 20px;
-    background-color: var(--color-sage);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    box-shadow: 0 2px 8px rgba(244, 208, 63, 0.4);
 }
 
 .timeline-content {
@@ -329,7 +390,7 @@ p {
    ======================================== */
 
 .hero-section {
-    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 50%, var(--color-gold) 100%);
     padding: 6rem 0;
     text-align: center;
 }
@@ -366,14 +427,15 @@ p {
 .philosophy-icon {
     width: 80px;
     height: 80px;
-    background-color: var(--color-sage);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    color: var(--color-white);
+    color: var(--color-dark-brown);
     margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3);
 }
 
 /* ========================================
@@ -382,7 +444,7 @@ p {
 
 .product-image {
     height: 500px;
-    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 50%, var(--color-gold) 100%);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -409,14 +471,15 @@ p {
 .ingredient-icon {
     width: 60px;
     height: 60px;
-    background-color: var(--color-sage);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-bright) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: var(--color-white);
+    color: var(--color-dark-brown);
     margin: 0 auto 1rem;
+    box-shadow: 0 4px 15px rgba(244, 208, 63, 0.3);
 }
 
 /* ========================================
@@ -424,7 +487,7 @@ p {
    ======================================== */
 
 .usage-card {
-    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 50%, var(--color-gold) 100%);
     padding: 2rem;
     border-radius: 15px;
     margin-bottom: 2rem;
@@ -567,18 +630,18 @@ p {
    ======================================== */
 
 .text-gradient {
-    background: linear-gradient(135deg, var(--color-sage), var(--color-brown));
+    background: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .shadow-naj {
-    box-shadow: 0 10px 30px rgba(156, 175, 136, 0.2);
+    box-shadow: 0 10px 30px rgba(244, 208, 63, 0.2);
 }
 
 .border-naj {
-    border: 2px solid var(--color-sage);
+    border: 2px solid var(--color-gold);
 }
 
 .rounded-naj {

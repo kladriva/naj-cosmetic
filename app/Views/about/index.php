@@ -151,18 +151,18 @@
 </section>
 
 <!-- Call to Action Section -->
-<section class="py-5" style="background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-brown) 100%); color: var(--color-white);">
+<section class="py-5" style="background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-brown) 100%);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-                <h2 class="text-white mb-4">
+                <h2 class="text-white mb-4 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
                     <i class="fas fa-users me-2"></i>Rejoignez l'aventure NAJ COSMETIC
                 </h2>
-                <p class="fs-5 mb-4 opacity-75">
+                <p class="fs-5 text-white mb-4" style="opacity: 0.95; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
                     Découvrez nos produits naturels et faites partie de notre communauté de femmes qui choisissent la beauté authentique.
                 </p>
                 <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <a href="/produits" class="btn btn-naj-outline">
+                    <a href="/produits" class="btn btn-naj-primary">
                         <i class="fas fa-shopping-bag me-2"></i>Découvrir nos produits
                     </a>
                     <a href="/" class="btn btn-naj-outline">

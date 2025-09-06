@@ -83,7 +83,7 @@
                                 <i class="fas fa-leaf"></i>
                             </div>
                             <h5 class="text-dark-brown mb-2">100% Naturel</h5>
-                            <p class="text-muted small">Aucun ingrédient synthétique ou chimique</p>
+                            <p class="text-muted small">Aucun ingrédient synthétique</p>
                         </div>
                     </div>
                     
